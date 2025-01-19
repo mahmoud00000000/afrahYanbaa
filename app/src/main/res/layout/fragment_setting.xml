@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".SettingFragment">
+    
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="414dp"
+        android:layout_height="115dp"
+        android:background="@drawable/rectangle_100">
+        
+        <TextView
+            android:layout_width="62dp"
+            android:layout_height="30dp"
+            android:text="الاعدادات"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="58dp"
+            android:layout_marginBottom="27dp"
+            android:layout_marginStart="176dp"
+            android:layout_marginEnd="176dp"/>
+        
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/rectangle_335"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="135dp"
+        android:layout_marginBottom="550dp"
+        android:layout_marginStart="339dp"
+        android:layout_marginEnd="15dp"/>
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/rectangle_335"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="135dp"
+        android:layout_marginBottom="550dp"
+        android:layout_marginStart="269dp"
+        android:layout_marginEnd="85dp"/>
+
+    <ImageView
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:src="@drawable/language_svgrepo_com__16_"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="145dp"
+        android:layout_marginBottom="560dp"
+        android:layout_marginStart="358dp"
+        android:layout_marginEnd="33dp"/>
+
+    <ImageView
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:src="@drawable/update_svgrepo_com"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="145dp"
+        android:layout_marginBottom="560dp"
+        android:layout_marginStart="288dp"
+        android:layout_marginEnd="104dp"/>
+    
+    <TextView
+        android:layout_width="28dp"
+        android:layout_height="23dp"
+        android:text="اللغه"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="170dp"
+        android:layout_marginBottom="490dp"
+        android:layout_marginStart="358dp"
+        android:layout_marginEnd="33dp"/>
+    
+    <TextView
+        android:layout_width="43dp"
+        android:layout_height="23dp"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        android:text="التحديث"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="170dp"
+        android:layout_marginBottom="490dp"
+        android:layout_marginStart="278dp"
+        android:layout_marginEnd="93dp"/>
+
+
+    
+    
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="384dp"
+        android:layout_height="397dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="258dp"
+        android:layout_marginBottom="100dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@color/white">
+
+
+        
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/white">
+                
+
+                
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:text="الاعدادات"
+                    android:paddingEnd="50dp"
+                    android:paddingTop="18dp"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:background="@color/white"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:paddingEnd="50dp"
+                    android:paddingTop="18dp"
+                    android:text="كلمة الافتتاح"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:background="@color/white"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:paddingEnd="50dp"
+                    android:paddingTop="18dp"
+                    android:text="طريقة إضافة اعلان"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:background="@color/white"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:paddingEnd="50dp"
+                    android:paddingTop="18dp"
+                    android:text="أسعار الاعلانات"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:background="@color/white"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:paddingEnd="50dp"
+                    android:paddingTop="18dp"
+                    android:text="الحسابات البنكية"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:background="@color/white"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:paddingEnd="50dp"
+                    android:paddingTop="18dp"
+                    android:text="سياسة الاستخدام"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:background="@color/white"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:paddingEnd="50dp"
+                    android:paddingTop="18dp"
+                    android:text="مشاركة التطبيق"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:background="@color/white"/>
+                
+            </LinearLayout>
+            
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="17dp"
+                    android:src="@drawable/setting_2_svgrepo_com__10_"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="360dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="351dp"/>
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="17dp"
+                    android:src="@drawable/page_1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="75dp"
+                    android:layout_marginBottom="303dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="351dp"/>
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="17dp"
+                    android:src="@drawable/announcement_svgrepo_com"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="131dp"
+                    android:layout_marginBottom="244dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="351dp"/>
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="17dp"
+                    android:src="@drawable/coins_svgrepo_com__5_"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="189dp"
+                    android:layout_marginBottom="188dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="351dp"/>
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="17dp"
+                    android:src="@drawable/bank_capital_office_building_law_svgrepo_com"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="246dp"
+                    android:layout_marginBottom="131dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="351dp"/>
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="17dp"
+                    android:src="@drawable/license_svgrepo_com__5_"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="304dp"
+                    android:layout_marginBottom="73dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="351dp"/>
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="17dp"
+                    android:src="@drawable/share_arrow_svgrepo_com__3_"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="361dp"
+                    android:layout_marginBottom="19dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="351dp"/>
+                
+                <ImageView
+                    android:layout_width="6dp"
+                    android:layout_height="13dp"
+                    android:src="@drawable/style_linear"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginBottom="362dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="363dp"/>
+
+                <ImageView
+                    android:layout_width="6dp"
+                    android:layout_height="13dp"
+                    android:src="@drawable/style_linear"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="79dp"
+                    android:layout_marginBottom="305dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="363dp"/>
+
+                <ImageView
+                    android:layout_width="6dp"
+                    android:layout_height="13dp"
+                    android:src="@drawable/style_linear"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="79dp"
+                    android:layout_marginBottom="305dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="363dp"/>
+
+                <ImageView
+                    android:layout_width="6dp"
+                    android:layout_height="13dp"
+                    android:src="@drawable/style_linear"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="136dp"
+                    android:layout_marginBottom="248dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="363dp"/>
+
+                <ImageView
+                    android:layout_width="6dp"
+                    android:layout_height="13dp"
+                    android:src="@drawable/style_linear"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="193dp"
+                    android:layout_marginBottom="191dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="363dp"/>
+
+                <ImageView
+                    android:layout_width="6dp"
+                    android:layout_height="13dp"
+                    android:src="@drawable/style_linear"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="250dp"
+                    android:layout_marginBottom="134dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="363dp"/>
+
+                <ImageView
+                    android:layout_width="6dp"
+                    android:layout_height="13dp"
+                    android:src="@drawable/style_linear"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="308dp"
+                    android:layout_marginBottom="76dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="363dp"/>
+
+                <ImageView
+                    android:layout_width="6dp"
+                    android:layout_height="13dp"
+                    android:src="@drawable/style_linear"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="365dp"
+                    android:layout_marginBottom="19dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="363dp"/>
+
+
+                
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            
+        </androidx.cardview.widget.CardView>
+        
+        
+        
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    
+
+</androidx.constraintlayout.widget.ConstraintLayout>

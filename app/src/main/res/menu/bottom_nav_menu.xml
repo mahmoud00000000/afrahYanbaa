@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/home_svgrepo_com__41_"
+        android:title="الرئيسية"
+        android:iconTint="@color/black"/>
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/chat_round_call_svgrepo_com__2_"
+        android:title="تواصل معنا"
+        android:iconTint="@color/black"/>
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/user_svgrepo_com__20_"
+        android:title="من نحن"
+        android:iconTint="@color/black"/>
+    <item
+        android:id="@+id/navigation_setting"
+        android:icon="@drawable/group_9910"
+        android:title="المزيد"
+        android:iconTint="@color/black"/>
+</menu>
