@@ -4,9 +4,9 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
 
-
     <application
         android:allowBackup="true"
+        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
@@ -14,8 +14,35 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AfrahYanbaa"
-        tools:targetApi="31"
-        tools:replace="android:appComponentFactory">
+        tools:replace="android:appComponentFactory"
+        tools:targetApi="31">
+        <activity
+            android:name=".BankAccountsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddPriceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OpeningActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HowAddAdActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ItemActivity"
+            android:exported="false" />
+        <activity
+            android:name=".KatratWaterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CalendarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ShowInvitationDetails"
+            android:exported="false" />
         <activity
             android:name=".Calendar"
             android:exported="false" />
@@ -34,7 +61,6 @@
         <activity
             android:name=".NotificationActivity"
             android:exported="false" />
-
         <activity
             android:name=".showAddActivity"
             android:exported="false" />
@@ -53,7 +79,10 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
+        </activity> <!-- Merged second manifest activity -->
+        <activity
+            android:name=".InvitationDetails"
+            android:exported="false" />
     </application>
 
 </manifest>

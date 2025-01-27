@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HowAddAdActivity"
+    android:background="@color/white">
+    
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/status_bar"
+        android:layout_width="414dp"
+        android:layout_height="115dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/rectangle_100">
+        
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            app:layout_constraintTop_toTopOf="@id/status_bar"
+            app:layout_constraintBottom_toBottomOf="@id/status_bar"
+            app:layout_constraintEnd_toEndOf="@id/status_bar"
+            android:src="@drawable/back_svgrepo_com__10_"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"/>
+        
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            app:layout_constraintTop_toTopOf="@id/status_bar"
+            app:layout_constraintBottom_toBottomOf="@id/status_bar"
+            app:layout_constraintStart_toStartOf="@id/status_bar"
+            app:layout_constraintEnd_toEndOf="@id/status_bar"
+            android:layout_marginTop="20dp"
+            android:text="طريقة إضافة اعلان"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:fontFamily="@font/cairo_semibold"/>
+        
+        
+        
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/text_1"
+        android:layout_width="202dp"
+        android:layout_height="26dp"
+        app:layout_constraintTop_toBottomOf="@id/status_bar"
+        app:layout_constraintEnd_toEndOf="@id/status_bar"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:textSize="14sp"
+        android:textColor="#6C6C6C"
+        android:text="مرحبا بكم أهالي ينبع في تطبيقنا"
+        android:fontFamily="@font/cairo_bold"/>
+    
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:layout_constraintTop_toTopOf="@id/text_1"
+        app:layout_constraintBottom_toBottomOf="@id/text_1"
+        app:layout_constraintEnd_toStartOf="@id/text_1"
+        android:src="@drawable/page_1__1_"/>
+
+    <TextView
+        android:id="@+id/text_2"
+        android:layout_width="160dp"
+        android:layout_height="33dp"
+        app:layout_constraintTop_toBottomOf="@id/text_1"
+        app:layout_constraintEnd_toEndOf="@id/text_1"
+        android:layout_marginTop="20dp"
+        android:text="خدمات نشر الإعلانات"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:fontFamily="@font/cairo_bold"/>
+    
+    <TextView
+        android:id="@+id/text_3"
+        android:layout_width="360dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/text_2"
+        app:layout_constraintEnd_toEndOf="@id/text_2"
+        android:textSize="13sp"
+        android:textColor="#707070"
+        android:fontFamily="@font/cairo_semibold"
+        android:text="جميع الإعلانات التجاريه والمتاجر الالكترونية ومنتجات الاسر المنتجة ومستلزمات الزواج والاثاث والأجهزة ولوازم المنزل والكوش والورود والحلويات ولوازم ملابس خاصة بالعريس والعروسة من خلال"/>
+    
+    <TextView
+        android:id="@+id/t_1"
+        android:layout_width="8dp"
+        android:layout_height="29dp"
+        app:layout_constraintTop_toBottomOf="@id/text_3"
+        app:layout_constraintEnd_toEndOf="@id/text_3"
+        android:text="1"
+        android:textColor="#1F115F"
+        android:textSize="15sp"
+        android:fontFamily="@font/cairo_bold"
+        android:layout_marginTop="10dp"/>
+    
+    <TextView
+        android:id="@+id/t_2"
+        android:layout_width="6dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toTopOf="@id/t_1"
+        app:layout_constraintBottom_toBottomOf="@id/t_1"
+        app:layout_constraintEnd_toStartOf="@id/t_1"
+        android:textColor="#1F115F"
+        android:textSize="15sp"
+        android:fontFamily="@font/cairo_bold"
+        android:text="-"/>
+    
+    <TextView
+        android:id="@+id/text_4"
+        android:layout_width="54dp"
+        android:layout_height="29dp"
+        app:layout_constraintTop_toTopOf="@id/t_2"
+        app:layout_constraintBottom_toBottomOf="@id/t_2"
+        app:layout_constraintEnd_toStartOf="@id/t_2"
+        android:layout_marginEnd="10dp"
+        android:textColor="#1F115F"
+        android:textSize="15sp"
+        android:fontFamily="@font/cairo_bold"
+        android:text="التطبيق" />
+
+    <TextView
+        android:id="@+id/t_3"
+        android:layout_width="8dp"
+        android:layout_height="29dp"
+        app:layout_constraintTop_toBottomOf="@id/text_3"
+        app:layout_constraintEnd_toEndOf="@id/text_4"
+        android:layout_marginEnd="110dp"
+        android:text="2"
+        android:textColor="#1F115F"
+        android:textSize="15sp"
+        android:fontFamily="@font/cairo_bold"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/t_4"
+        android:layout_width="6dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toTopOf="@id/t_3"
+        app:layout_constraintBottom_toBottomOf="@id/t_3"
+        app:layout_constraintEnd_toStartOf="@id/t_3"
+        android:textColor="#1F115F"
+        android:textSize="15sp"
+        android:fontFamily="@font/cairo_bold"
+        android:text="-"/>
+    
+    <TextView
+        android:id="@+id/text_5"
+        android:layout_width="129dp"
+        android:layout_height="29dp"
+        app:layout_constraintTop_toTopOf="@id/t_4"
+        app:layout_constraintBottom_toBottomOf="@id/t_4"
+        app:layout_constraintEnd_toStartOf="@id/t_4"
+        android:textColor="#1F115F"
+        android:textSize="15sp"
+        android:fontFamily="@font/cairo_bold"
+        android:text="الخدمات الالكترونية"
+        android:layout_marginEnd="10dp"/>
+    
+    <ImageView
+        android:id="@+id/image_group_1"
+        android:layout_width="384dp"
+        android:layout_height="168dp"
+        app:layout_constraintTop_toTopOf="@id/text_3"
+        app:layout_constraintEnd_toEndOf="@id/text_3"
+        android:layout_marginTop="130dp"
+        android:background="@drawable/rectangle_28833"/>
+    
+    <TextView
+        android:id="@+id/text_group_1"
+        android:layout_width="58dp"
+        android:layout_height="26dp"
+        app:layout_constraintTop_toTopOf="@id/image_group_1"
+        app:layout_constraintEnd_toEndOf="@id/image_group_1"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="افراح ينبع"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/cairo_bold"/>
+    
+    <ImageView
+        android:id="@+id/whatsapp"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:layout_constraintTop_toBottomOf="@id/text_group_1"
+        app:layout_constraintEnd_toEndOf="@id/text_group_1"
+        android:src="@drawable/icons"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"/>
+    
+    <ImageView
+        android:id="@+id/snapshat"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:layout_constraintTop_toBottomOf="@id/whatsapp"
+        app:layout_constraintEnd_toEndOf="@id/whatsapp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/snapchat_snap_chat_svgrepo_com__3_"/>
+
+    <ImageView
+        android:id="@+id/x"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:layout_constraintTop_toBottomOf="@id/snapshat"
+        app:layout_constraintEnd_toEndOf="@id/snapshat"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/_88357"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

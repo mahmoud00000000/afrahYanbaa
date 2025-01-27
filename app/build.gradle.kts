@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.example.afrahyanbaa"
-    compileSdk = 34
+    compileSdk = 35
 
     buildFeatures{
         viewBinding = true
@@ -14,7 +14,7 @@ android {
     defaultConfig {
         applicationId = "com.example.afrahyanbaa"
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -57,6 +57,8 @@ dependencies {
     implementation ("com.google.android.material:material:1.4.0")
     implementation ("com.android.support:appcompat-v7:28.0.0")
     implementation ("com.google.android.material:material:1.9.0")
+    implementation ("com.google.android.material:material:1.9.0")
+
 
 
 }

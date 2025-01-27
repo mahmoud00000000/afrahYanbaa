@@ -10,6 +10,7 @@
     android:background="@color/white">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/status_bar"
         android:layout_width="414dp"
         android:layout_height="115dp"
         app:layout_constraintTop_toTopOf="parent"
@@ -19,6 +20,7 @@
         
         
         <TextView
+            android:fontFamily="@font/cairo_semibold"
             android:layout_width="86dp"
             android:layout_height="30dp"
             app:layout_constraintTop_toTopOf="parent"
@@ -65,20 +67,33 @@
         
         
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-
+    
     <androidx.cardview.widget.CardView
+        android:id="@id/card_1"
         android:layout_width="383dp"
         android:layout_height="300dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/status_bar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginBottom="170dp">
+        android:layout_marginTop="20dp"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="10dp"
+        android:background="@color/white">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/card_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:src="@drawable/nopath_3"/>
 
             <ImageView
                 android:layout_width="match_parent"
@@ -87,13 +102,100 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                android:src="@drawable/nopath_3"
-                android:scaleType="centerCrop"/>
-
+                android:src="@drawable/no_path_cover"/>
+            
+            <ImageView
+                android:id="@+id/comman"
+                android:layout_width="13dp"
+                android:layout_height="10dp"
+                app:layout_constraintBottom_toBottomOf="@id/card_image"
+                app:layout_constraintEnd_toEndOf="@id/card_image"
+                android:src="@drawable/inverted_commas"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="20dp"/>
+            
+            <TextView
+                android:fontFamily="@font/cairo_semibold"
+                android:id="@+id/card_title"
+                android:layout_width="285dp"
+                android:layout_height="29dp"
+                app:layout_constraintTop_toTopOf="@id/comman"
+                app:layout_constraintBottom_toBottomOf="@id/comman"
+                app:layout_constraintEnd_toStartOf="@id/comman"
+                android:layout_marginEnd="10dp"
+                android:text="دعوة زواج الشاب مشعل محمد حميد الرفاعي"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:gravity="center"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-
     </androidx.cardview.widget.CardView>
 
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_2"
+        android:layout_width="383dp"
+        android:layout_height="300dp"
+        app:layout_constraintTop_toBottomOf="@id/card_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="10dp"
+        android:background="@color/white">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/card_image2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:src="@drawable/nopath_copy"
+                android:scaleType="centerCrop"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:src="@drawable/no_path_cover"
+                android:scaleType="centerCrop"/>
+
+            <ImageView
+                android:id="@+id/comman2"
+                android:layout_width="13dp"
+                android:layout_height="10dp"
+                app:layout_constraintBottom_toBottomOf="@id/card_image2"
+                app:layout_constraintEnd_toEndOf="@id/card_image2"
+                android:src="@drawable/inverted_commas"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="20dp"/>
+
+            <TextView
+                android:fontFamily="@font/cairo_semibold"
+                android:id="@+id/card_title2"
+                android:layout_width="285dp"
+                android:layout_height="29dp"
+                app:layout_constraintTop_toTopOf="@id/comman2"
+                app:layout_constraintBottom_toBottomOf="@id/comman2"
+                app:layout_constraintEnd_toStartOf="@id/comman2"
+                android:layout_marginEnd="10dp"
+                android:text="دعوة زواج الشاب مشعل محمد حميد الرفاعي"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:gravity="center"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+    
 </androidx.constraintlayout.widget.ConstraintLayout>

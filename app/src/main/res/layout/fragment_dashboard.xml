@@ -8,6 +8,7 @@
     android:background="@color/white">
     
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/status_bar"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -16,6 +17,7 @@
         android:background="@drawable/rectangle_100">
         
         <TextView
+            android:fontFamily="@font/cairo_semibold"
             android:layout_width="78dp"
             android:layout_height="30dp"
             app:layout_constraintTop_toTopOf="parent"
@@ -35,122 +37,98 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
+        android:fontFamily="@font/cairo_semibold"
+        android:id="@+id/complite_name"
         android:layout_width="91dp"
         android:layout_height="29dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="130dp"
-        android:layout_marginBottom="550dp"
+        app:layout_constraintTop_toBottomOf="@id/status_bar"
+        app:layout_constraintEnd_toEndOf="@id/status_bar"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="15dp"
-        android:layout_marginStart="308dp"
         android:text="اسمك بالكامل"
         android:textSize="15sp"
         android:textColor="@color/black"/>
     
     <EditText
+        android:fontFamily="@font/cairo_semibold"
+        android:id="@+id/name"
         android:layout_width="384dp"
         android:layout_height="50dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="169dp"
-        android:layout_marginBottom="520dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginEnd="15dp"
+        app:layout_constraintTop_toBottomOf="@id/complite_name"
+        app:layout_constraintEnd_toEndOf="@id/complite_name"
+        android:layout_marginTop="10dp"
         android:hint="ادخل اسمك بالكامل"
         android:textColorHint="#B1B0B0"
         android:inputType="text"
         android:textColor="@color/black"/>
     
     <TextView
+        android:fontFamily="@font/cairo_semibold"
+        android:id="@+id/email_address"
         android:layout_width="105dp"
         android:layout_height="29dp"
         android:textSize="15sp"
         android:text="البريد الالكتروني"
         android:textColor="@color/black"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="234dp"
-        android:layout_marginBottom="480dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginStart="294dp"/>
+        app:layout_constraintTop_toBottomOf="@id/name"
+        app:layout_constraintEnd_toEndOf="@id/name"
+        android:layout_marginTop="15dp"/>
 
     <EditText
+        android:fontFamily="@font/cairo_semibold"
+        android:id="@+id/email_address_et"
         android:layout_width="384dp"
         android:layout_height="50dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="273dp"
-        android:layout_marginBottom="450dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginEnd="15dp"
+        app:layout_constraintTop_toBottomOf="@id/email_address"
+        app:layout_constraintEnd_toEndOf="@id/email_address"
+        android:layout_marginTop="15dp"
         android:hint="ادخل البريد الالكتروني"
         android:textColorHint="#B1B0B0"
         android:inputType="textEmailAddress"
         android:textColor="@color/black"/>
 
     <TextView
+        android:fontFamily="@font/cairo_semibold"
+        android:id="@+id/inquiry"
         android:layout_width="66dp"
         android:layout_height="29dp"
         android:text="استفسارك"
         android:textColor="@color/black"
         android:textSize="15sp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="338dp"
-        android:layout_marginBottom="390dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginStart="333dp"/>
+        app:layout_constraintTop_toBottomOf="@id/email_address_et"
+        app:layout_constraintEnd_toEndOf="@id/email_address_et"
+        android:layout_marginTop="15dp"/>
     
     <EditText
+        android:fontFamily="@font/cairo_semibold"
+        android:id="@+id/inquiry_et"
         android:layout_width="384dp"
         android:layout_height="162dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="377dp"
-        android:layout_marginBottom="250dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginEnd="15dp"
+        app:layout_constraintTop_toBottomOf="@id/inquiry"
+        app:layout_constraintEnd_toEndOf="@id/inquiry"
+        android:layout_marginTop="15dp"
         android:hint="استفسارك"
         android:textColorHint="#B1B0B0"
         android:textColor="@color/black"
         android:paddingBottom="110dp"/>
     
     <ImageView
+        android:id="@+id/send_btn"
         android:layout_width="384dp"
         android:layout_height="50dp"
         android:src="@drawable/rectangle_28620"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="500dp"
-        android:layout_marginBottom="100dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginEnd="15dp"/>
+        app:layout_constraintTop_toBottomOf="@id/inquiry_et"
+        app:layout_constraintEnd_toEndOf="@id/inquiry_et"
+        android:layout_marginTop="60dp"/>
 
     <TextView
+        android:fontFamily="@font/cairo_semibold"
         android:layout_width="38dp"
         android:layout_height="29dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="520dp"
-        android:layout_marginBottom="115dp"
-        android:layout_marginStart="188dp"
-        android:layout_marginEnd="188dp"
+        app:layout_constraintTop_toTopOf="@id/send_btn"
+        app:layout_constraintBottom_toBottomOf="@id/send_btn"
+        app:layout_constraintStart_toStartOf="@id/send_btn"
+        app:layout_constraintEnd_toEndOf="@id/send_btn"
         android:text="ارسال"
         android:textColor="@color/white"
         android:textSize="15sp"/>

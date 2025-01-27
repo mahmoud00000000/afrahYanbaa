@@ -1,5 +1,6 @@
 package com.example.afrahyanbaa
 
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -18,6 +19,11 @@ class WatershopsActivity : AppCompatActivity() {
         window.statusBarColor = Color.parseColor("#A70F71")
 
         window.decorView.systemUiVisibility = 0
+
+        binding.imageGroupA.setOnClickListener {
+            val i = Intent(this,KatratWaterActivity::class.java)
+            startActivity(i)
+        }
 
     }
 }

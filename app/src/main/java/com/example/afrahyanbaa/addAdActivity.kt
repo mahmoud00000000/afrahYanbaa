@@ -27,8 +27,6 @@ class addAdActivity : AppCompatActivity() {
                 Toast.makeText(this, "برجاء ادخال بياناتك", Toast.LENGTH_SHORT).show()
             else{
                 Toast.makeText(this, "تمت الاضافه بنجاح", Toast.LENGTH_SHORT).show()
-                val intent = Intent(this, MainActivity::class.java)
-                startActivity(intent)
                 finish()
             }
         }

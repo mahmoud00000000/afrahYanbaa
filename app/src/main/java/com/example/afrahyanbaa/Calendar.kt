@@ -1,5 +1,6 @@
 package com.example.afrahyanbaa
 
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.widget.Toast
@@ -26,9 +27,31 @@ class Calendar : AppCompatActivity() {
 
         window.decorView.systemUiVisibility = 0
 
-        binding.backBtn.setOnClickListener {
-            finish()
+        binding.card1.setOnClickListener {
+            val image = R.drawable.nopath_3
+            val  text = binding.itemText.text.toString()
+
+            val intent = Intent(this,ShowInvitationDetails::class.java).apply {
+                putExtra("EXTRA_IMAGE", image)
+                putExtra("EXTRA_TEXT", text)
+            }
+            startActivity(intent)
         }
+
+        binding.card2.setOnClickListener {
+            val image2 = R.drawable.nopath_4
+            val text2 = binding.itemText2.text.toString()
+
+            val intent = Intent(this,ShowInvitationDetails::class.java).apply {
+                putExtra("EXTRA_IMAGE", image2)
+                putExtra("EXTRA_TEXT", text2)
+
+
+            }
+            startActivity(intent)
+        }
+
+
 
 
 

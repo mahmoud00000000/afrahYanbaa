@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ShowInvitationDetails">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="414dp"
+        android:layout_height="115dp"
+        android:background="@drawable/rectangle_100"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:layout_width="102dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="164dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="164dp"
+            android:layout_marginBottom="25dp"
+            android:fontFamily="@font/cairo_semibold"
+            android:text="تفاصيل الدعوة"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/share_btn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="65dp"
+            android:layout_marginEnd="378dp"
+            android:layout_marginBottom="29dp"
+            android:src="@drawable/group_5932"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="379dp"
+            android:layout_marginTop="65dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="30dp"
+            android:src="@drawable/back_svgrepo_com__10_"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <ImageView
+        android:id="@+id/invitation_image"
+        android:layout_width="384dp"
+        android:layout_height="550dp"
+        android:layout_marginTop="30dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/invitation_title"
+        android:layout_width="293dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/cairo_semibold"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@id/invitation_image"
+        app:layout_constraintTop_toBottomOf="@id/invitation_image" />
+
+    <ImageView
+        android:id="@+id/date_icon"
+        android:layout_width="18dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/date_svgrepo_com__12_"
+        app:layout_constraintEnd_toEndOf="@id/invitation_title"
+        app:layout_constraintTop_toBottomOf="@id/invitation_title" />
+
+    <TextView
+        android:id="@+id/day"
+        android:layout_width="16dp"
+        android:layout_height="26dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/cairo_semibold"
+        android:gravity="center"
+        android:text="25"
+        android:textColor="#707070"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/date_icon"
+        app:layout_constraintEnd_toStartOf="@id/date_icon"
+        app:layout_constraintTop_toTopOf="@id/date_icon" />
+
+    <TextView
+        android:fontFamily="@font/cairo_semibold"
+        android:id="@+id/month"
+        android:layout_width="35dp"
+        android:layout_height="26dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="center"
+        android:text="مارس"
+        android:textColor="#707070"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/day"
+        app:layout_constraintEnd_toStartOf="@id/day"
+        app:layout_constraintTop_toTopOf="@id/day" />
+
+    <TextView
+        android:fontFamily="@font/cairo_semibold"
+        android:id="@+id/year"
+        android:layout_width="34dp"
+        android:layout_height="26dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="center"
+        android:text="2024"
+        android:textColor="#707070"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/month"
+        app:layout_constraintEnd_toStartOf="@id/month"
+        app:layout_constraintTop_toTopOf="@id/month" />
+
+    <TextView
+        android:id="@+id/and"
+        android:layout_width="6dp"
+        android:layout_height="26dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="center"
+        android:text="-"
+        android:textColor="#707070"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/year"
+        app:layout_constraintEnd_toStartOf="@id/year"
+        app:layout_constraintTop_toTopOf="@id/year" />
+
+    <TextView
+        android:fontFamily="@font/cairo_semibold"
+        android:id="@+id/oclock"
+        android:layout_width="40dp"
+        android:layout_height="26dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="center"
+        android:text="11:00"
+        android:textColor="#707070"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/and"
+        app:layout_constraintEnd_toStartOf="@id/and"
+        app:layout_constraintTop_toTopOf="@id/and" />
+
+    <TextView
+        android:fontFamily="@font/cairo_semibold"
+        android:id="@+id/am"
+        android:layout_width="25dp"
+        android:layout_height="26dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="center"
+        android:text="AM"
+        android:textColor="#707070"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/oclock"
+        app:layout_constraintEnd_toStartOf="@id/oclock"
+        app:layout_constraintTop_toTopOf="@id/oclock" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

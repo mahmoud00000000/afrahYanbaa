@@ -14,6 +14,7 @@
         android:background="@drawable/rectangle_100">
         
         <TextView
+            android:fontFamily="@font/cairo_semibold"
             android:layout_width="120dp"
             android:layout_height="30dp"
             android:text="إضافة اعلان تجاري"
@@ -60,6 +61,7 @@
 
 
     <EditText
+        android:fontFamily="@font/cairo_semibold"
         android:id="@+id/name"
         android:layout_width="384dp"
         android:layout_height="50dp"
@@ -88,6 +90,7 @@
         android:layout_marginEnd="15dp">
 
         <EditText
+            android:fontFamily="@font/cairo_semibold"
             android:id="@+id/number"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -132,6 +135,7 @@
             android:src="@drawable/flag_tow"/>
 
         <TextView
+            android:fontFamily="@font/cairo_semibold"
             android:layout_width="34dp"
             android:layout_height="29dp"
             android:textSize="15dp"
@@ -152,6 +156,7 @@
 
 
     <EditText
+        android:fontFamily="@font/cairo_semibold"
         android:id="@+id/emailaddrress"
         android:layout_width="384dp"
         android:layout_height="50dp"
@@ -203,6 +208,7 @@
             android:src="@drawable/location_svgrepo_com__98_"/>
         
         <TextView
+            android:fontFamily="@font/cairo_semibold"
             android:layout_width="125dp"
             android:layout_height="19dp"
             android:textColor="@color/white"
@@ -236,6 +242,7 @@
         android:layout_marginEnd="15dp">
 
         <EditText
+            android:fontFamily="@font/cairo_semibold"
             android:id="@+id/first_department"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -276,6 +283,7 @@
         android:layout_marginEnd="15dp">
 
         <EditText
+            android:fontFamily="@font/cairo_semibold"
             android:id="@+id/scound_department"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -324,6 +332,7 @@
             android:layout_height="match_parent"/>
 
         <TextView
+            android:fontFamily="@font/cairo_semibold"
             android:layout_width="144dp"
             android:layout_height="29dp"
             android:textColor="@color/black"
@@ -372,6 +381,7 @@
         android:src="@drawable/rectangle_28620"/>
     
     <TextView
+        android:fontFamily="@font/cairo_semibold"
         android:layout_width="38dp"
         android:layout_height="29dp"
         app:layout_constraintBottom_toBottomOf="parent"

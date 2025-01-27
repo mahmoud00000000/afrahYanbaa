@@ -32,6 +32,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
+            android:fontFamily="@font/regular_font"
             android:layout_width="62dp"
             android:layout_height="30dp"
             android:layout_marginStart="277dp"
@@ -75,6 +76,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
+            android:fontFamily="@font/regular_font"
             android:layout_width="85dp"
             android:layout_height="24dp"
             android:layout_marginStart="240dp"
@@ -117,6 +119,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
+            android:fontFamily="@font/cairo_semibold"
             android:layout_width="6dp"
             android:layout_height="17dp"
             android:layout_marginStart="33dp"
@@ -139,6 +142,7 @@
     android:layout_height="wrap_content">
 
     <TextView
+        android:fontFamily="@font/regular_font"
         android:layout_width="414dp"
         android:layout_height="25dp"
         android:layout_marginTop="115dp"
@@ -192,7 +196,9 @@
         android:layout_marginStart="357dp"
         android:layout_marginEnd="32dp"
         android:src="@drawable/group_5851"/>
+
     <TextView
+        android:fontFamily="@font/cairo_semibold"
         android:layout_width="96dp"
         android:layout_height="23dp"
         app:layout_constraintTop_toTopOf="parent"
@@ -232,7 +238,9 @@
         android:layout_marginStart="157dp"
         android:layout_marginEnd="232dp"
         android:src="@drawable/group_5851"/>
+
     <TextView
+        android:fontFamily="@font/cairo_semibold"
         android:layout_width="96dp"
         android:layout_height="23dp"
         app:layout_constraintTop_toTopOf="parent"
@@ -303,6 +311,7 @@
         android:textColor="@color/black"/>
     
     <TextView
+        android:fontFamily="@font/cairo_semibold"
         android:layout_width="110dp"
         android:layout_height="23dp"
         android:text="مشاهدة دعوات الزواج"
@@ -376,6 +385,7 @@
 
 
     <TextView
+        android:fontFamily="@font/cairo_semibold"
         android:layout_width="110dp"
         android:layout_height="23dp"
         android:text="مشاهدة إعلانات تجاريه"
